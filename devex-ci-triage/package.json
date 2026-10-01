@@ -6,6 +6,8 @@
   "description": "DevEx interview: a GitHub Action that triages failed CI jobs and comments on the PR.",
   "scripts": {
     "start": "tsx src/index.ts",
+    "test": "node --import tsx --test src/**/*.test.ts",
+    "typecheck": "tsc --noEmit",
     "reset": "rm -f .comments.json && echo 'PR comments cleared.'"
   },
   "devDependencies": {
